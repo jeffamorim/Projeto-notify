@@ -1,46 +1,156 @@
-body{
+body {
     margin: 0;
     display: grid;
-    grid-template-areas: 'article article article article'
-                         'header header header header'
-                         'navbar navbar navbar navbar'
-                         'section section section section'
-                         'aside aside aside aside '
-                         'footer footer footer footer';
+    grid-template-areas: 'article article article article' 'header header header header' 'navbar navbar navbar navbar' 'section section section section' 'aside aside aside aside ' 'footer footer footer footer';
     grid-template-rows: 1.291vh 78.02vh 43vh 56vh 60.5vh 17vh;
-    grid-auto-columns: 25vw 25vw 25vw 25vw;
-}
-article{
-    grid-area: article;
-    background-color: #30cb70;
-    box-shadow: 10px;
+    grid-template-columns: 24.7vw 24.7vw 24.7vw 24.5vw;
 }
 
-header{
+article {
+    grid-area: article;
+    background-color: #30cb70;
+}
+
+h1 {
+    color: #FFF;
+    font-family: 'Pacifico', cursive;
+    margin: 20px 0;
+    font-size: 50px;
+    letter-spacing: 3px;
+    font-weight: lighter;
+}
+
+h1 span {
+    color: #2CCD6F;
+}
+
+header {
     grid-area: header;
     background-color: green;
     background-image: url(images/banner.png);
+    background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     justify-content: flex-end;
+}
+
+header div:first-child{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+header div:first-child p{
+    font-family: 'Roboto', sans-serif;
+    color: #FFF;
+    font-size: 18pt;
+    width: 70%;
+}
+
+#icones{
+    width: 100px;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content:center;
+}
+
+#icones li{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 100%;
+    padding: 12px;
+    margin-left: 5px;
+}
+
+#icones li:hover{
+    background-color: #30cb70;
+    transition: 0.9s;
+}
+
+#banner img{
+    width: 385px;
+    margin-top: 75px;
+    margin-right: 100px;
+}
+
+nav {
+    grid-area: navbar;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav div{
+    width: 350px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+nav div img{
+    background-color: #30cb70;
+    margin: 0;
+    border-radius: 60%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav div h3{
+    margin: 15px 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14pt;
+    font-weight: lighter;
+}
+
+nav div p{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 12pt;
+    color: #8a8a8a;
+}
+
+section {
+    grid-area: section;
+    background-color: lightgray;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+section div{
+    display: flex;
+    flex-direction: column;
+}
+
+section h3{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 12pt;
     
 }
 
-nav{
-    grid-area: navbar;
-    background-color: white;
+section div p{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 12pt;
+
 }
 
-section{
-    grid-area: section;
-    background-color: green;
+.inputButton{
+    display: flex;
+
 }
 
-aside{
+aside {
     grid-area: aside;
     background-color: gray;
 }
-footer{
+
+footer {
     grid-area: footer;
     background-color: green;
 }
