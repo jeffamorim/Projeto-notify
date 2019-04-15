@@ -62,6 +62,7 @@ header div:first-child p {
     padding: 0;
     display: flex;
     justify-content: center;
+    margin-left: 22px;
 }
 
 #icones li {
@@ -184,7 +185,7 @@ section div p {
     color: #FFF;
 }
 
-
+/* INICIO QUARTA SEÇÃO ASIDE */
 aside {
     grid-area: aside;
     background-color: white;
@@ -196,7 +197,11 @@ aside {
     font-family: 'Roboto', sans-serif;
 }
 
-/* INICIO QUARTA SEÇÃO ASIDE */
+aside p{
+    color: #8a8a8a;
+}
+
+
 #newAside{
     margin: 50px 100px;
     display: flex;
@@ -218,11 +223,13 @@ aside {
     margin: 0 170px;
     font-style: italic;
     color: #8a8a8a;
+    padding: 10px;
 }
 
 #pessoas{
     display: flex;
     margin-bottom: 40px;
+    padding-top: 50px;
 }
 
 .foto-pessoa{
@@ -258,18 +265,28 @@ aside {
     display: flex;
     justify-content: space-between;
     
-
 }
 
 .redeSocial:last-child{ 
     width: 50%;
     display: flex; 
     justify-content: space-between;
-    
-
-
-    
+        
 }
+
+.redeSocial{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#teste{
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+}
+
 footer {
     grid-area: footer;
     background-color: #e5e3e3; 
@@ -277,6 +294,12 @@ footer {
     justify-content: space-around; 
     align-items: center;
     flex-direction: center;
+}
+
+footer a{
+    color: #8a8a8a;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
 }
 
 #contactDownload{
